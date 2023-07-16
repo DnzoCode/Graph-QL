@@ -1,10 +1,10 @@
-import TaskCard from "./TaskCard";
+import {TaskCard} from "./TaskCard";
 
 export function TaskList({ tasks }) {
   return (
     <div>
         {tasks.map(task => (
-            <TaskCard/>
+            <TaskCard task={task}/>
         ))}
     </div>
   )
